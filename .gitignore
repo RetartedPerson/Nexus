@@ -1,0 +1,131 @@
+# ============================================================
+
+# NEXUS — Git Ignore Rules
+
+# ============================================================
+
+# ── Secrets & Credentials ────────────────────────────────────
+
+# Never commit API keys, access tokens, passwords, or secrets.
+
+config/api_keys.json
+config/instagram.json
+config/*secret*
+config/*secrets*
+*.env
+*.env.*
+!.env.example
+
+# Private certificates / cryptographic keys
+
+config/certs/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+# ── Python ───────────────────────────────────────────────────
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Runtime State ────────────────────────────────────────────
+
+# Local memory/state should stay on the user's machine.
+
+memory/*.json
+*.log
+logs/
+
+# Local databases
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Runtime/cache files
+
+.cache/
+cache/
+tmp/
+temp/
+
+# ── Testing / Coverage ───────────────────────────────────────
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ── IDE / Editors ────────────────────────────────────────────
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+
+# ── Windows / OS ─────────────────────────────────────────────
+
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ── Backup / Temporary Files ─────────────────────────────────
+
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+
+# ── NEXUS Local / Machine-Specific ───────────────────────────
+
+# Add machine-specific files here as NEXUS grows.
+
+config/local/
+config/*.local.*
+memory/local/
+runtime/
+
+# ── Generated Frontend / Web Assets ──────────────────────────
+
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS / Deployment Secrets ─────────────────────────────────
+
+*.token
+*.secret
+*.credentials
+secrets/
+credentials/
+
+# ── Archives generated locally ───────────────────────────────
+
+*.zip
+*.tar
+*.tar.gz
+*.7z

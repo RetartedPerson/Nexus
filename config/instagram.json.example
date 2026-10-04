@@ -1,0 +1,16 @@
+{
+  "enabled": false,
+  "busy_mode": false,
+  "auto_reply": true,
+  "busy_message": "Boss is currently busy",
+  "reply_cooldown_seconds": 300,
+  "webhook_host": "127.0.0.1",
+  "webhook_port": 8787,
+  "verify_token": "CHANGE_ME_TO_A_RANDOM_SECRET",
+  "app_secret": "",
+  "access_token": "",
+  "instagram_user_id": "",
+  "graph_api_base": "https://graph.instagram.com",
+  "graph_api_version": "v23.0",
+  "test_recipient_id": ""
+}
